@@ -15,8 +15,12 @@ function matchTwoNumber() {
   let secondNumber = document.getElementById("match-input").value;
   if (firstNumber == "" && secondNumber == "") {
     document.getElementById("pls-write").style.display = "block";
+    document.getElementById("random-input").value = "";
+    document.getElementById("match-input").value = "";
   } else if (firstNumber == secondNumber) {
     document.getElementById("yes-match").style.display = "block";
+    document.getElementById("random-input").value = "";
+    document.getElementById("match-input").value = "";
   } else {
     document.getElementById("not-match").style.display = "block";
   }
